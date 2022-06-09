@@ -1,10 +1,12 @@
-require('@nomiclabs/hardhat-waffle')
-require('dotenv').config()
-require('@nomiclabs/hardhat-etherscan')
-require('./tasks/accounts')
-require('./tasks/block-number')
-require('hardhat-gas-reporter')
-require('solidity-coverage')
+import '@nomiclabs/hardhat-waffle'
+import 'dotenv/config'
+import '@nomiclabs/hardhat-etherscan'
+import './tasks/accounts'
+import './tasks/block-number'
+import 'hardhat-gas-reporter'
+import 'solidity-coverage'
+import '@nomiclabs/hardhat-ethers'
+import '@typechain/hardhat'
 
 const GANACHE_RPC_URL = process.env.GANACHE_RPC_URL || ''
 const GANACHE_PRIVATE_KEY = process.env.GANACHE_PRIVATE_KEY || ''

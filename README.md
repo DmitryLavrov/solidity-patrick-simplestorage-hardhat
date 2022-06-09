@@ -30,6 +30,12 @@ npm i -D @nomiclabs/hardhat-etherscan
 npm i -D hardhat-gas-reporter
 npm i -D solidity-coverage
 ```
+###Typescript
+```shell
+npm i -D ts-node typescript
+npm i -D chai @types/node @types/mocha @types/chai
+npm i -D @typechain/hardhat
+```
 
 ## Resources
 
@@ -49,6 +55,8 @@ Plugin hardhat-gas-reporter
 Plugin solidity-coverage
 * https://www.npmjs.com/package/solidity-coverage
 
+Typescript
+* https://hardhat.org/guides/typescript
 
 # Usage
 
@@ -69,6 +77,9 @@ npx hardhat test
 
 # Code coverage for Solidity testing
 npx hardhat coverage
+
+# Generate typescript interfaces
+npx hardhat typechain
 ```
 
 ## Deploy
@@ -131,4 +142,9 @@ File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines
 --------------------|----------|----------|----------|----------|----------------|
 All files           |       50 |      100 |    66.67 |       50 |                |
 --------------------|----------|----------|----------|----------|----------------|
+```
+## Typechain
+Generate folder typechain-types with TS interfaces of smart projects
+```shell
+npx hardhat typechain
 ```
